@@ -1,0 +1,398 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rizki Ramadhani, Full-Stack IoT and Backend Developer, Complete Portfolio</title>
+<meta name="description" content="Complete portfolio of Rizki Ramadhani: all 8 GitHub repositories, MUSH IoT system, UMKM platform (1st place AgriTechJam 2025), RF433 hardware, MyKeuangan, education, competitions, contact.">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,600;12..96,700&family=Public+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* hallmark stamp: theme=night-ops (complete edition, all 8 repos + full CV) | critique: console-dark index, status panel signature | waivers: none */
+:root{
+  --bg:#0B1413;
+  --bg-2:#101D1B;
+  --panel:#132220;
+  --ink:#EAF2EE;
+  --soft:#C3D4CD;
+  --muted:#93A8A0;
+  --line:#23403A;
+  --accent:#3FE0BE;
+  --font-display:"Bricolage Grotesque",system-ui,sans-serif;
+  --font-body:"Public Sans",system-ui,sans-serif;
+  --font-mono:"IBM Plex Mono",ui-monospace,monospace;
+}
+html,body{overflow-x:clip;background:var(--bg);color:var(--ink);font-family:var(--font-body);}
+.font-display{font-family:var(--font-display);overflow-wrap:break-word;min-width:0;}
+.mono{font-family:var(--font-mono);}
+.wrap{max-width:74rem;margin-inline:auto;padding-inline:1.25rem;}
+@media(min-width:768px){.wrap{padding-inline:2rem;}}
+h1,h2{text-wrap:balance;}
+h1,h2,h3{letter-spacing:-0.015em;}
+h1{letter-spacing:-0.025em;}
+body{line-height:1.6;}
+li{line-height:1.62;}
+#mush .max-w-2xl,#work .max-w-2xl{max-width:62ch;}
+p{text-wrap:pretty;}
+.tabular{font-variant-numeric:tabular-nums;}
+a{transition:color 160ms ease-out, border-color 160ms ease-out, background-color 160ms ease-out;}
+a:focus-visible,button:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
+html.js [data-reveal]{opacity:0;transform:translateY(14px);transition:opacity 320ms ease-out, transform 320ms ease-out;}
+html.js [data-reveal].in{opacity:1;transform:none;}
+nav[data-spy] a.active{color:var(--accent) !important;}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;}
+.rowline{border-top:1px solid var(--line);}
+.dot{width:8px;height:8px;border-radius:9999px;background:var(--accent);}
+.tick{width:2rem;height:4px;background:var(--accent);}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important;}
+}
+@media print{
+  .no-print{display:none !important;}
+  body{background:#fff;color:#111;}
+  .panel{break-inside:avoid;}
+  html.js [data-reveal]{opacity:1 !important;transform:none !important;transition:none !important;}
+  p,li{orphans:3;widows:3;}
+  h2,h3{break-after:avoid;}
+}
+
+:root{--amber:#F5B544;}
+header.sticky{backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);background:rgba(11,20,19,.82) !important;}
+.hero{position:relative;isolation:isolate;}
+.hero::before{content:"";position:absolute;inset:0;z-index:-1;pointer-events:none;opacity:.4;
+  background-image:linear-gradient(var(--line) 1px,transparent 1px),linear-gradient(90deg,var(--line) 1px,transparent 1px);background-size:44px 44px;
+  -webkit-mask-image:radial-gradient(ellipse at 72% 40%,#000 0,transparent 68%);mask-image:radial-gradient(ellipse at 72% 40%,#000 0,transparent 68%);}
+.monitor{background:linear-gradient(180deg,#17322d,var(--panel));border:1px solid var(--line);border-radius:14px;padding:1.25rem;box-shadow:0 0 70px -22px rgba(63,224,190,.45);}
+.pulse{animation:pulse 1.8s ease-out infinite;}
+@keyframes pulse{0%{box-shadow:0 0 0 0 rgba(63,224,190,.6)}100%{box-shadow:0 0 0 9px rgba(63,224,190,0)}}
+.caret{display:inline-block;width:8px;height:1.1em;background:var(--accent);vertical-align:-.2em;margin-left:3px;animation:blink 1s steps(2) infinite;}
+@keyframes blink{to{opacity:0}}
+.flow li:not([aria-hidden]){animation:hop 6s infinite;}
+.flow li:nth-child(3){animation-delay:1.5s}.flow li:nth-child(5){animation-delay:3s}.flow li:nth-child(7){animation-delay:4.5s}
+@keyframes hop{0%,28%,100%{border-color:var(--line);box-shadow:none}6%,20%{border-color:var(--accent);box-shadow:0 0 22px -4px rgba(63,224,190,.75)}}
+.badge{display:inline-block;margin-top:4px;padding:2px 10px;border-radius:9999px;color:var(--amber);background:rgba(245,181,68,.12);border:1px solid rgba(245,181,68,.55);font-weight:700;}
+.chip{display:inline-block;margin:0 6px 6px 0;padding:3px 10px;border:1px solid var(--line);background:var(--bg-2);border-radius:6px;color:var(--ink);}
+.chip:hover{border-color:var(--accent);}
+@media print{.hero::before{display:none;}.monitor{box-shadow:none;}}
+</style>
+</head>
+<body class="antialiased">
+
+<header class="no-print sticky top-0 z-10" style="border-bottom:1px solid var(--line);background:var(--bg);">
+  <div class="wrap flex items-center justify-between py-3 gap-4">
+    <a href="#top" class="mono text-sm font-bold" style="color:var(--ink);">rizki.ramadhani</a>
+    <nav class="hidden md:flex flex-wrap gap-x-5 gap-y-1 mono text-[13px]" aria-label="Sections" data-spy>
+      <a href="#mush" style="color:var(--soft);">mush</a>
+      <a href="#work" style="color:var(--soft);">work</a>
+      <a href="#more" style="color:var(--soft);">more repos</a>
+      <a href="#skills" style="color:var(--soft);">skills</a>
+      <a href="#about" style="color:var(--soft);">about</a>
+      <a href="#contact" style="color:var(--soft);">contact</a>
+    </nav>
+    <div class="flex items-center gap-2 mono text-[13px]">
+      <a href="CV_Rizki_Ramadhani.pdf" download class="px-3 py-1.5 rounded-md border" style="border-color:var(--line);color:var(--ink);">cv.pdf</a>
+      <a href="mailto:rizkiramadhanirizki@apps.ipb.ac.id?subject=Internship%20Jan%20to%20Jun%202027" class="px-3 py-1.5 rounded-md font-bold" style="background:var(--accent);color:#06231E;">email</a>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <section class="wrap hero pt-10 md:pt-16 pb-12 grid md:grid-cols-12 gap-8 items-center">
+    <div class="md:col-span-7">
+      <p class="mono text-[13px] flex items-center gap-2" style="color:var(--accent);"><span class="dot pulse" aria-hidden="true"></span>open to internship, jan to jun 2027</p>
+      <h1 class="font-display font-bold leading-[0.95] mt-4" style="font-size:clamp(3.2rem,9vw,6.2rem);">Rizki<br>Ramadhani</h1>
+      <p class="mt-5 mono text-[16px] md:text-[18px]" style="color:var(--amber);">I build <span id="role">backend APIs</span><span class="caret" aria-hidden="true"></span></p>
+      <p class="mt-4 text-lg max-w-xl" style="color:var(--soft);">Computer Engineering Technology student at IPB University, GPA 3.77 of 4.00. I take a signal from the sensor to the screen: firmware and PCB design, backend APIs, ML forecasting, and dashboards.</p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="#mush" class="font-semibold px-5 py-2.5 rounded-md" style="background:var(--accent);color:#06231E;">See the MUSH system</a>
+        <a href="mailto:rizkiramadhanirizki@apps.ipb.ac.id?subject=Internship%20Jan%20to%20Jun%202027" class="font-semibold px-5 py-2.5 rounded-md border" style="border-color:var(--line);color:var(--ink);">Email me</a>
+      </div>
+    </div>
+    <aside class="md:col-span-5 monitor" aria-label="Simulated MUSH drum monitor">
+      <div class="flex justify-between mono text-xs" style="color:var(--muted);"><span>mush / drum-01</span><span class="flex items-center gap-2"><span class="dot pulse" aria-hidden="true"></span>simulated signal</span></div>
+      <div class="mt-3 flex items-end gap-2"><span id="temp" class="font-display font-bold tabular" style="font-size:4rem;line-height:1;">33.0</span><span class="mono text-xl mb-1.5" style="color:var(--amber);">&deg;C</span></div>
+      <svg viewBox="0 0 300 80" preserveAspectRatio="none" class="w-full mt-2" style="height:5rem;" aria-hidden="true">
+        <defs><linearGradient id="fill" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#F5B544" stop-opacity=".35"/><stop offset="1" stop-color="#F5B544" stop-opacity="0"/></linearGradient></defs>
+        <polygon id="area" fill="url(#fill)" points=""/><polyline id="line" fill="none" stroke="#F5B544" stroke-width="2" stroke-linejoin="round" points=""/>
+      </svg>
+      <dl class="mt-3 grid grid-cols-3 gap-2 mono text-[12px]">
+        <div><dt style="color:var(--muted);">gas index</dt><dd id="gas" class="tabular font-bold text-[15px]">0</dd></div>
+        <div><dt style="color:var(--muted);">humidity</dt><dd id="hum" class="tabular font-bold text-[15px]">0%</dd></div>
+        <div><dt style="color:var(--muted);">pressure</dt><dd id="prs" class="tabular font-bold text-[15px]">0 hPa</dd></div>
+      </dl>
+      <p class="mono text-[11px] mt-3" style="color:var(--muted);">Demo signal in the style of the MUSH dashboard. Not live farm data.</p>
+      <dl class="mt-4 mono text-[13px]">
+        <div class="flex justify-between py-2 rowline"><dt style="color:var(--muted);">public repos</dt><dd class="tabular font-bold">8</dd></div>
+        <div class="flex justify-between py-2 rowline"><dt style="color:var(--muted);">agritechjam 2025</dt><dd class="font-bold" style="color:var(--amber);">1st place</dd></div>
+        <div class="flex justify-between py-2 rowline"><dt style="color:var(--muted);">ipb gpa</dt><dd class="tabular font-bold">3.77 / 4.00</dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <section id="mush" class="wrap py-10 scroll-mt-16">
+    <p class="mono text-[13px]" style="color:var(--accent);">flagship, 2024 to present, 4 repos</p>
+    <h2 class="font-display font-bold mt-2 max-w-3xl" style="font-size:clamp(1.7rem,3.6vw,2.5rem);">MUSH watches silage ferment at Pagi Farm</h2>
+    <p class="mt-3 max-w-2xl" style="color:var(--soft);">Silage fermentation happens inside sealed drums, invisible until the batch spoils. MUSH fixes that: ESP32 gateways report DS18B20 temperature, humidity, pressure, MQ-135 gas, and load-cell weight. One API stores it all, a sidecar service forecasts it, and a dashboard plots it.</p>
+
+    <ol class="flow mt-6 panel p-4 md:p-5 flex flex-col md:flex-row md:items-center gap-2 mono text-[13px]" aria-label="MUSH data flow">
+      <li class="px-3 py-2 rounded-md border" style="border-color:var(--line);">barn gateways</li>
+      <li aria-hidden="true" style="color:var(--accent);">--&gt;</li>
+      <li class="px-3 py-2 rounded-md border" style="border-color:var(--line);">api validates with zod</li>
+      <li aria-hidden="true" style="color:var(--accent);">--&gt;</li>
+      <li class="px-3 py-2 rounded-md border" style="border-color:var(--line);">postgres rollups</li>
+      <li aria-hidden="true" style="color:var(--accent);">--&gt;</li>
+      <li class="px-3 py-2 rounded-md border" style="border-color:var(--line);">dashboard polls, 10s</li>
+    </ol>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-5">
+      <article class="panel p-6">
+        <div class="tick mb-4" aria-hidden="true"></div>
+        <h3 class="font-display font-semibold text-2xl">MUSH Server, the central API</h3>
+        <p class="mono text-xs mt-2" style="color:var(--muted);">adonisjs, typescript, prisma, postgresql, docker, zod</p>
+        <ul class="mt-3 space-y-2 list-disc pl-5 text-[15px]" style="color:var(--soft);">
+          <li>I built the REST API that ingests telemetry from ESP32 gateways and validates every payload with Zod.</li>
+          <li>It rolls readings into hourly and daily aggregations, and provisions a drum record automatically when an unknown device ID shows up.</li>
+          <li>When the ML service is down, the API answers 503 instead of failing silently.</li>
+        </ul>
+        <a class="mono text-[13px] inline-block mt-4 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/mush-server">github.com/rizkiramadhani-001/mush-server</a>
+      </article>
+      <article class="panel p-6">
+        <div class="tick mb-4" aria-hidden="true"></div>
+        <h3 class="font-display font-semibold text-2xl">MUSH ML, forecasting sidecar</h3>
+        <p class="mono text-xs mt-2" style="color:var(--muted);">python, fastapi, scikit-learn, pydantic, pytest</p>
+        <ul class="mt-3 space-y-2 list-disc pl-5 text-[15px]" style="color:var(--soft);">
+          <li>I built a decoupled FastAPI microservice that trains and serves scikit-learn forecasting models on multisensor fermentation data.</li>
+          <li>Pydantic guards the inputs and Pytest covers the training path.</li>
+        </ul>
+        <a class="mono text-[13px] inline-block mt-4 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/mush-ml">github.com/rizkiramadhani-001/mush-ml</a>
+      </article>
+      <article class="panel p-6">
+        <div class="tick mb-4" aria-hidden="true"></div>
+        <h3 class="font-display font-semibold text-2xl">MUSH React, dashboard</h3>
+        <p class="mono text-xs mt-2" style="color:var(--muted);">react, ionic, vite, three.js, recharts</p>
+        <ul class="mt-3 space-y-2 list-disc pl-5 text-[15px]" style="color:var(--soft);">
+          <li>I built a responsive web and mobile dashboard with an interactive Three.js 3D drum status view and Recharts time-series graphs.</li>
+          <li>It ships light and dark themes with 10-second background polling, plus mock and HTTP data adapters.</li>
+        </ul>
+        <a class="mono text-[13px] inline-block mt-4 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/mush-react">github.com/rizkiramadhani-001/mush-react</a>
+      </article>
+      <article class="panel p-6">
+        <div class="tick mb-4" aria-hidden="true"></div>
+        <h3 class="font-display font-semibold text-2xl">MUSH landing page</h3>
+        <p class="mono text-xs mt-2" style="color:var(--muted);">html, tailwind css, vanilla javascript</p>
+        <ul class="mt-3 space-y-2 list-disc pl-5 text-[15px]" style="color:var(--soft);">
+          <li>A static product page that presents the MUSH project to farm visitors, built with HTML, Tailwind CSS, and vanilla JavaScript.</li>
+        </ul>
+        <a class="mono text-[13px] inline-block mt-4 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/landing">github.com/rizkiramadhani-001/landing</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="work" class="wrap py-10 scroll-mt-16">
+    <p class="mono text-[13px]" style="color:var(--accent);">selected work</p>
+    <h2 class="font-display font-bold mt-2" style="font-size:clamp(1.7rem,3.6vw,2.5rem);">Index</h2>
+
+    <article class="mt-6 py-6 rowline grid md:grid-cols-12 gap-4" style="border-bottom:1px solid var(--line);">
+      <p class="mono text-[13px] md:col-span-2" style="color:var(--muted);">nov 2025<br><span class="badge">1st place</span></p>
+      <div class="md:col-span-7">
+        <h3 class="font-display font-semibold text-2xl">UMKM investment and collaboration platform</h3>
+        <p class="mt-2 max-w-2xl text-[15px]" style="color:var(--soft);">The problem: UMKM financial data is sensitive, yet investors need to see it before committing. The platform solves it with strict role separation.</p>
+        <ul class="mt-2 space-y-2 max-w-2xl list-disc pl-5 text-[15px]" style="color:var(--soft);">
+          <li>As backend developer I designed the Laravel and PostgreSQL backend for six roles (public, UMKM owner, investor, supplier, distributor, super admin), with access control that keeps each UMKM's financial data visible only to approved investors.</li>
+          <li>I built the endpoints behind the real-time financial dashboards, revenue-based profit-sharing calculations, and automated monthly reports exportable to PDF and Excel.</li>
+          <li>I integrated OpenSign e-signatures for investment and supply contracts, Pusher real-time chat, and a Gemini chatbot for FAQs and UMKM recommendations.</li>
+        </ul>
+      </div>
+      <p class="mono text-xs md:col-span-3" style="color:var(--muted);">laravel, postgresql, react, tailwind, pusher, opensign, gemini api<br><span style="color:var(--soft);">team kabel hdmi, himalkom ipb, agritechjam 2025</span></p>
+    </article>
+
+    <article class="py-6 rowline grid md:grid-cols-12 gap-4" style="border-bottom:1px solid var(--line);">
+      <p class="mono text-[13px] md:col-span-2" style="color:var(--muted);">hardware</p>
+      <div class="md:col-span-7">
+        <h3 class="font-display font-semibold text-2xl">Multi-node RF433 telemetry and PCB hardware</h3>
+        <p class="mt-2 max-w-2xl text-[15px]" style="color:var(--soft);">The problem: raw sensor signals drift and pick up noise across distributed nodes. Stable readings need conditioning in hardware, not just filtering in code.</p>
+        <ul class="mt-2 space-y-2 max-w-2xl list-disc pl-5 text-[15px]" style="color:var(--soft);">
+          <li>I programmed C++ firmware for 4 LGT8F32P Nano-class sensor nodes and an Arduino Mega master board to acquire multi-point sensor data and transmit it wirelessly over RF433 modules.</li>
+          <li>I designed custom analog sensor-conditioning schematics and PCB layouts in KiCad to stabilize signal acquisition across the distributed nodes.</li>
+        </ul>
+        <a class="mono text-[13px] inline-block mt-3 underline underline-offset-4 break-all" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/Arduino-Project-4-Node-and-Mega">github.com/rizkiramadhani-001/Arduino-Project-4-Node-and-Mega</a>
+      </div>
+      <p class="mono text-xs md:col-span-3" style="color:var(--muted);">c++, arduino mega, lgt8f32p, rf433, kicad</p>
+    </article>
+
+    <article class="py-6 rowline grid md:grid-cols-12 gap-4" style="border-bottom:1px solid var(--line);">
+      <p class="mono text-[13px] md:col-span-2" style="color:var(--muted);">web app</p>
+      <div class="md:col-span-7">
+        <h3 class="font-display font-semibold text-2xl">MyKeuangan, personal finance and reporting</h3>
+        <p class="mt-2 max-w-2xl text-[15px]" style="color:var(--soft);">The problem: personal budgets live in scattered notes, so monthly spending stays invisible. MyKeuangan puts records, categories, and budgets in one reactive app.</p>
+        <ul class="mt-2 space-y-2 max-w-2xl list-disc pl-5 text-[15px]" style="color:var(--soft);">
+          <li>I built a reactive finance app with Laravel and Livewire to record transactions, manage expense categories, and track monthly budgets.</li>
+          <li>Filtered transaction reports export to Excel and PDF.</li>
+        </ul>
+        <a class="mono text-[13px] inline-block mt-3 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/MyKeuangan">github.com/rizkiramadhani-001/MyKeuangan</a>
+      </div>
+      <p class="mono text-xs md:col-span-3" style="color:var(--muted);">laravel, php, livewire, tailwind, mysql</p>
+    </article>
+  </section>
+
+  <section id="more" class="wrap py-10 scroll-mt-16">
+    <p class="mono text-[13px]" style="color:var(--accent);">more from github, all 8 repos</p>
+    <h2 class="font-display font-bold mt-2" style="font-size:clamp(1.7rem,3.6vw,2.5rem);">The rest of the shelf</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-5">
+      <article class="panel p-6">
+        <h3 class="font-display font-semibold text-xl">sensorix-porto</h3>
+        <p class="mono text-xs mt-1" style="color:var(--muted);">css, forked from nabeelarrafi95-cmd/sensorix-porto</p>
+        <p class="mt-2 text-[15px]" style="color:var(--soft);">Portfolio site for the Sensorix team, kept as a fork I contribute to and learn from.</p>
+        <a class="mono text-[13px] inline-block mt-3 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/sensorix-porto">github.com/rizkiramadhani-001/sensorix-porto</a>
+      </article>
+      <article class="panel p-6">
+        <h3 class="font-display font-semibold text-xl">rizkiramadhani-001, profile readme</h3>
+        <p class="mono text-xs mt-1" style="color:var(--muted);">profile, featured project mush</p>
+        <p class="mt-2 text-[15px]" style="color:var(--soft);">My GitHub profile page: featured project MUSH with its four repos, plus internship interests in full-stack web, backend systems, and IoT product development.</p>
+        <a class="mono text-[13px] inline-block mt-3 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/rizkiramadhani-001">github.com/rizkiramadhani-001/rizkiramadhani-001</a>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="wrap py-10 scroll-mt-16">
+    <p class="mono text-[13px]" style="color:var(--accent);">toolbox</p>
+    <h2 class="font-display font-bold mt-2" style="font-size:clamp(1.7rem,3.6vw,2.5rem);">Stack</h2>
+    <dl class="mt-6 mono text-[14px]">
+      <div class="py-3 rowline grid md:grid-cols-12 gap-2"><dt class="md:col-span-3" style="color:var(--muted);">languages</dt><dd class="md:col-span-9" style="color:var(--ink);">typescript, javascript, python, php, c, c++, sql</dd></div>
+      <div class="py-3 rowline grid md:grid-cols-12 gap-2"><dt class="md:col-span-3" style="color:var(--muted);">backend and ml</dt><dd class="md:col-span-9" style="color:var(--ink);">adonisjs, laravel, livewire, fastapi, node.js, prisma, zod, pydantic, scikit-learn, gemini api</dd></div>
+      <div class="py-3 rowline grid md:grid-cols-12 gap-2"><dt class="md:col-span-3" style="color:var(--muted);">iot and embedded</dt><dd class="md:col-span-9" style="color:var(--ink);">esp32, arduino mega, lgt8f32p, rf433 telemetry, c/c++ firmware, signal conditioning, kicad pcb</dd></div>
+      <div class="py-3 rowline grid md:grid-cols-12 gap-2" style="border-bottom:1px solid var(--line);"><dt class="md:col-span-3" style="color:var(--muted);">frontend, data, tools</dt><dd class="md:col-span-9" style="color:var(--ink);">react, ionic, vite, three.js, recharts, tailwind, postgresql, mysql, docker, git, pytest, linux</dd></div>
+    </dl>
+  </section>
+
+  <section id="about" class="wrap py-10 scroll-mt-16">
+    <p class="mono text-[13px]" style="color:var(--accent);">school and contests</p>
+    <h2 class="font-display font-bold mt-2" style="font-size:clamp(1.7rem,3.6vw,2.5rem);">About</h2>
+    <div class="mt-6 grid md:grid-cols-2 gap-5">
+      <div class="panel p-6">
+        <h3 class="font-display font-semibold text-lg">Education</h3>
+        <p class="mt-2 text-[15px]" style="color:var(--soft);">IPB University, College of Vocational Studies, Bogor, Indonesia. Applied Bachelor (D4) in Computer Engineering Technology, Aug 2024 to expected 2028. Cumulative GPA 3.77 of 4.00.</p>
+        <p class="mono text-[13px] mt-3" style="color:var(--muted);">coursework</p>
+        <p class="text-[15px]" style="color:var(--soft);">Embedded Systems, Microcontroller Architecture, Computer Networks, Database Systems, Object-Oriented Programming, Data Structures and Algorithms.</p>
+      </div>
+      <div class="panel p-6">
+        <h3 class="font-display font-semibold text-lg">Timeline</h3>
+        <ol class="mt-3 space-y-0 mono text-[13px]">
+          <li class="py-2.5 rowline flex gap-4"><span class="tabular shrink-0" style="color:var(--accent);">2024</span><span style="color:var(--soft);">Started D4 Computer Engineering at IPB, began MUSH for Pagi Farm</span></li>
+          <li class="py-2.5 rowline flex gap-4"><span class="tabular shrink-0" style="color:var(--accent);">2025</span><span style="color:var(--soft);">1st place, AgriTechJam 2025, backend developer, team Kabel HDMI</span></li>
+          <li class="py-2.5 rowline flex gap-4"><span class="tabular shrink-0" style="color:var(--accent);">2026</span><span style="color:var(--soft);">COMPFEST 18 AI Innovation Challenge and Garuda Hacks 7.0 participant</span></li>
+          <li class="py-2.5 rowline flex gap-4" style="border-bottom:1px solid var(--line);"><span class="tabular shrink-0" style="color:var(--accent);">2027</span><span style="color:var(--soft);">Open to 6-month credit-bearing internship, Jan to Jun</span></li>
+        </ol>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap py-12 scroll-mt-16">
+    <div class="panel p-8 md:p-12 text-center">
+      <p class="mono text-[13px]" style="color:var(--accent);">contact</p>
+      <h2 class="font-display font-bold mt-2" style="font-size:clamp(1.8rem,4vw,2.8rem);">Hire me for Jan to Jun 2027</h2>
+      <p class="mt-3 max-w-xl mx-auto" style="color:var(--soft);">A 6-month credit-bearing internship in backend, IoT, or embedded engineering through IPB University. Email is fastest.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href="mailto:rizkiramadhanirizki@apps.ipb.ac.id?subject=Internship%20Jan%20to%20Jun%202027" class="font-semibold px-6 py-3 rounded-md" style="background:var(--accent);color:#06231E;">Email Rizki</a>
+        <button type="button" data-copy="rizkiramadhanirizki@apps.ipb.ac.id" class="font-semibold px-6 py-3 rounded-md border mono text-[15px]" style="border-color:var(--line);color:var(--ink);">Copy email</button>
+        <a href="CV_Rizki_Ramadhani.pdf" download class="font-semibold px-6 py-3 rounded-md border" style="border-color:var(--line);color:var(--ink);">Download CV</a>
+      </div>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href="https://github.com/rizkiramadhani-001" class="mono text-[13px] underline underline-offset-4" style="color:var(--accent);">github.com/rizkiramadhani-001</a>
+        <a href="https://linkedin.com/in/rizki-ramadhani" class="mono text-[13px] underline underline-offset-4" style="color:var(--accent);">linkedin.com/in/rizki-ramadhani</a>
+      </div>
+      <p class="mono text-xs mt-8" style="color:var(--muted);">bogor, indonesia, +62 881-0112-05176, rizkiramadhanirizki@apps.ipb.ac.id<br>linkedin.com/in/rizki-ramadhani, github.com/rizkiramadhani-001</p>
+    </div>
+  </section>
+
+</main>
+<script>
+(function(){
+  document.documentElement.classList.add("js");
+  var reduce = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
+  // Scrollspy: highlights the nav link of the section in view.
+  var links = Array.prototype.slice.call(document.querySelectorAll("nav[data-spy] a"));
+  var map = {};
+  links.forEach(function(a){ map[a.getAttribute("href").slice(1)] = a; });
+  if ("IntersectionObserver" in window && !reduce) {
+    var spy = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) {
+          links.forEach(function(a){ a.classList.remove("active"); });
+          var a = map[e.target.id];
+          if (a) a.classList.add("active");
+        }
+      });
+    }, { rootMargin: "-40% 0px -55% 0px" });
+    Object.keys(map).forEach(function(id){
+      var s = document.getElementById(id);
+      if (s) spy.observe(s);
+    });
+  }
+  // Reveal: subtle entrance for panels and rows, content stays visible without JS.
+  var items = [];
+  items.forEach(function(el){ el.setAttribute("data-reveal", ""); });
+  if (!reduce && "IntersectionObserver" in window) {
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(e){
+        if (e.isIntersecting) { e.target.classList.add("in"); io.unobserve(e.target); }
+      });
+    }, { threshold: 0.08 });
+    items.forEach(function(el){ io.observe(el); });
+  } else {
+    items.forEach(function(el){ el.classList.add("in"); });
+  }
+  // Copy email button with visible feedback.
+  var btn = document.querySelector("[data-copy]");
+  if (btn) {
+    var original = btn.textContent;
+    btn.addEventListener("click", function(){
+      var done = function(){ btn.textContent = "Copied"; setTimeout(function(){ btn.textContent = original; }, 1600); };
+      var text = btn.getAttribute("data-copy");
+      if (navigator.clipboard && navigator.clipboard.writeText) {
+        navigator.clipboard.writeText(text).then(done, function(){ btn.textContent = text; });
+      } else { btn.textContent = text; }
+    });
+  }
+  // Hero: rotating role line
+  var roleEl = document.getElementById("role");
+  if (roleEl && !reduce) {
+    var roles = ["backend APIs","IoT firmware","sensor dashboards","forecasting services"], ri = 0, ci = 0, del = false;
+    (function tick(){
+      var w = roles[ri]; roleEl.textContent = w.slice(0, ci);
+      if (!del && ci < w.length) { ci++; setTimeout(tick, 70); }
+      else if (!del) { del = true; setTimeout(tick, 1500); }
+      else if (ci > 0) { ci--; setTimeout(tick, 35); }
+      else { del = false; ri = (ri + 1) % roles.length; setTimeout(tick, 250); }
+    })();
+  }
+  // Hero: simulated drum signal (demo data, labeled as such on the page)
+  var line = document.getElementById("line"), area = document.getElementById("area");
+  if (line && area) {
+    var N = 48, t = 0, data = [];
+    var val = function(i){ return 33 + 2.2*Math.sin(i/7) + 0.9*Math.sin(i/2.3) + (Math.random()-0.5)*0.5; };
+    for (; t < N; t++) data.push(val(t));
+    var draw = function(){
+      var pts = data.map(function(v, i){ return (i/(N-1)*300).toFixed(1) + "," + (76 - (v-29)/9*70).toFixed(1); }).join(" ");
+      line.setAttribute("points", pts); area.setAttribute("points", "0,80 " + pts + " 300,80");
+      var v = data[N-1];
+      document.getElementById("temp").textContent = v.toFixed(1);
+      document.getElementById("gas").textContent = Math.round(420 + (v-33)*35);
+      document.getElementById("hum").textContent = Math.round(68 - (v-33)*1.5) + "%";
+      document.getElementById("prs").textContent = (1009 + Math.sin(t/20)).toFixed(0) + " hPa";
+    };
+    draw();
+    if (!reduce) setInterval(function(){ data.shift(); data.push(val(t++)); draw(); }, 1000);
+  }
+  // Skills as chips
+  Array.prototype.forEach.call(document.querySelectorAll("#skills dd"), function(dd){
+    var parts = dd.textContent.split(", "); dd.textContent = "";
+    parts.forEach(function(p){ var c = document.createElement("span"); c.className = "chip"; c.textContent = p; dd.appendChild(c); });
+  });
+})();
+</script>
+</body>
+</html>

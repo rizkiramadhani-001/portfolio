@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Rizki Ramadhani, Full-Stack IoT and Backend Developer</title>
+<meta name="description" content="Portfolio of Rizki Ramadhani: MUSH IoT fermentation monitoring, UMKM investment backend (1st place AgriTechJam 2025), RF433 telemetry hardware, MyKeuangan finance app.">
+<script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+<style>
+/* hallmark stamp: theme=night-ops (custom, redesign of index.html) | critique: console-dark type-led index, status panel signature | waivers: none */
+:root{
+  --bg:#0B1413;
+  --bg-2:#101D1B;
+  --panel:#132220;
+  --ink:#EAF2EE;
+  --soft:#C3D4CD;
+  --muted:#93A8A0;
+  --line:#23403A;
+  --accent:#3FE0BE;
+  --accent-dim:#1B6F60;
+  --font-display:"Space Grotesk",system-ui,sans-serif;
+  --font-body:"Inter",system-ui,sans-serif;
+  --font-mono:"JetBrains Mono",ui-monospace,monospace;
+}
+html,body{overflow-x:clip;background:var(--bg);color:var(--ink);font-family:var(--font-body);}
+.font-display{font-family:var(--font-display);overflow-wrap:break-word;min-width:0;}
+.mono{font-family:var(--font-mono);}
+.wrap{max-width:74rem;margin-inline:auto;padding-inline:1.25rem;}
+@media(min-width:768px){.wrap{padding-inline:2rem;}}
+h1,h2{text-wrap:balance;}
+p{text-wrap:pretty;}
+.tabular{font-variant-numeric:tabular-nums;}
+a{transition:color 160ms ease-out, border-color 160ms ease-out, background-color 160ms ease-out;}
+a:focus-visible{outline:2px solid var(--accent);outline-offset:3px;border-radius:2px;}
+.panel{background:var(--panel);border:1px solid var(--line);border-radius:12px;}
+.rowline{border-top:1px solid var(--line);}
+.dot{width:8px;height:8px;border-radius:9999px;background:var(--accent);}
+.tick{width:2rem;height:4px;background:var(--accent);}
+@media (prefers-reduced-motion: reduce){
+  *,*::before,*::after{animation:none !important;transition:none !important;scroll-behavior:auto !important;}
+}
+@media print{
+  .no-print{display:none !important;}
+  body{background:#fff;color:#111;}
+}
+</style>
+</head>
+<body class="antialiased">
+
+<header class="no-print" style="border-bottom:1px solid var(--line);">
+  <div class="wrap flex items-center justify-between py-3">
+    <a href="#top" class="mono text-sm font-bold" style="color:var(--ink);">rizki.ramadhani</a>
+    <nav class="flex gap-5 mono text-[13px]" aria-label="Sections">
+      <a href="#mush" style="color:var(--soft);">mush</a>
+      <a href="#work" style="color:var(--soft);">work</a>
+      <a href="#skills" style="color:var(--soft);">skills</a>
+      <a href="#contact" style="color:var(--soft);">contact</a>
+    </nav>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- HERO: split, headline left, live-status panel right -->
+  <section class="wrap pt-10 md:pt-16 pb-10 grid md:grid-cols-12 gap-8 items-start">
+    <div class="md:col-span-7">
+      <p class="mono text-[13px] flex items-center gap-2" style="color:var(--accent);"><span class="dot" aria-hidden="true"></span>open to internship, jan to jun 2027</p>
+      <h1 class="font-display font-bold leading-[1.0] mt-4" style="font-size:clamp(2.8rem,7vw,5rem);">Rizki<br>Ramadhani</h1>
+      <p class="mt-5 text-lg max-w-xl" style="color:var(--soft);">I build full-stack IoT systems, from ESP32 firmware and KiCad PCBs to AdonisJS APIs, React dashboards, and scikit-learn forecasting.</p>
+      <div class="mt-7 flex flex-wrap gap-3">
+        <a href="#mush" class="font-semibold px-5 py-2.5 rounded-md" style="background:var(--accent);color:#06231E;">See the MUSH system</a>
+        <a href="mailto:rizkiramadhanirizki@apps.ipb.ac.id?subject=Internship%20Jan%20to%20Jun%202027" class="font-semibold px-5 py-2.5 rounded-md border" style="border-color:var(--line);color:var(--ink);">Email me</a>
+      </div>
+    </div>
+    <aside class="md:col-span-5 panel p-5" aria-label="Profile status">
+      <p class="mono text-xs" style="color:var(--muted);">github.com/rizkiramadhani-001</p>
+      <p class="mt-2 text-[15px]" style="color:var(--soft);">Full-stack web and IoT developer building monitoring dashboards, APIs, and sensor data services.</p>
+      <dl class="mt-4 space-y-0 mono text-[13px]">
+        <div class="flex justify-between py-2 rowline"><dt style="color:var(--muted);">public repos</dt><dd class="tabular font-bold" style="color:var(--ink);">8</dd></div>
+        <div class="flex justify-between py-2 rowline"><dt style="color:var(--muted);">agritechjam 2025</dt><dd class="font-bold" style="color:var(--accent);">1st place</dd></div>
+        <div class="flex justify-between py-2 rowline"><dt style="color:var(--muted);">ipb gpa</dt><dd class="tabular font-bold" style="color:var(--ink);">3.77 / 4.00</dd></div>
+        <div class="flex justify-between py-2 rowline" style="border-bottom:1px solid var(--line);"><dt style="color:var(--muted);">base</dt><dd style="color:var(--ink);">bogor, indonesia</dd></div>
+      </dl>
+    </aside>
+  </section>
+
+  <!-- MUSH -->
+  <section id="mush" class="wrap py-10 scroll-mt-16">
+    <p class="mono text-[13px]" style="color:var(--accent);">01 / flagship, 2024 to present</p>
+    <h2 class="font-display font-bold mt-2 max-w-3xl" style="font-size:clamp(1.7rem,3.6vw,2.5rem);">MUSH watches silage ferment at Pagi Farm</h2>
+    <p class="mt-3 max-w-2xl" style="color:var(--soft);">ESP32 gateways report temperature, humidity, pressure, MQ-135 gas, and load-cell weight. One API stores it all, a sidecar service forecasts it, and a dashboard plots it.</p>
+
+    <ol class="mt-6 panel p-4 md:p-5 flex flex-col md:flex-row md:items-center gap-2 mono text-[13px]" aria-label="MUSH data flow">
+      <li class="px-3 py-2 rounded-md border" style="border-color:var(--line);">barn gateways</li>
+      <li aria-hidden="true" style="color:var(--accent);">--&gt;</li>
+      <li class="px-3 py-2 rounded-md border" style="border-color:var(--line);">api validates with zod</li>
+      <li aria-hidden="true" style="color:var(--accent);">--&gt;</li>
+      <li class="px-3 py-2 rounded-md border" style="border-color:var(--line);">postgres rollups</li>
+      <li aria-hidden="true" style="color:var(--accent);">--&gt;</li>
+      <li class="px-3 py-2 rounded-md border" style="border-color:var(--line);">dashboard polls, 10s</li>
+    </ol>
+
+    <div class="mt-6 grid md:grid-cols-2 gap-5">
+      <article class="panel p-6">
+        <div class="tick mb-4" aria-hidden="true"></div>
+        <h3 class="font-display font-semibold text-2xl">The API that never loses a reading</h3>
+        <p class="mt-3" style="color:var(--soft);">I built the AdonisJS REST API that takes in gateway telemetry and validates every payload with Zod. It rolls readings into hourly and daily aggregates, provisions a drum record when an unknown device ID appears, and answers 503 instead of failing silently when the ML service is down.</p>
+        <p class="mono text-xs mt-4" style="color:var(--muted);">adonisjs, typescript, prisma, postgresql, docker</p>
+        <a class="mono text-[13px] inline-block mt-2 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/mush-server">github.com/rizkiramadhani-001/mush-server</a>
+      </article>
+      <div class="grid gap-5">
+        <article class="panel p-6">
+          <h3 class="font-display font-semibold text-xl">Forecasting sidecar</h3>
+          <p class="mt-2 text-[15px]" style="color:var(--soft);">I built a separate FastAPI service that trains and serves scikit-learn models on fermentation data. Pydantic guards inputs, Pytest covers training.</p>
+          <a class="mono text-[13px] inline-block mt-3 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/mush-ml">github.com/rizkiramadhani-001/mush-ml</a>
+        </article>
+        <article class="panel p-6">
+          <h3 class="font-display font-semibold text-xl">Dashboard and product page</h3>
+          <p class="mt-2 text-[15px]" style="color:var(--soft);">Responsive React and Ionic dashboard with an interactive Three.js drum view, Recharts graphs, and light and dark themes. A static page presents the project to farm visitors.</p>
+          <p class="mono text-[13px] mt-3 space-y-1">
+            <a class="block underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/mush-react">github.com/rizkiramadhani-001/mush-react</a>
+            <a class="block underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/landing">github.com/rizkiramadhani-001/landing</a>
+          </p>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK as index rows -->
+  <section id="work" class="wrap py-10 scroll-mt-16">
+    <p class="mono text-[13px]" style="color:var(--accent);">02 / selected work</p>
+    <h2 class="font-display font-bold mt-2" style="font-size:clamp(1.7rem,3.6vw,2.5rem);">Index</h2>
+
+    <article class="mt-6 py-6 rowline grid md:grid-cols-12 gap-4" style="border-bottom:1px solid var(--line);">
+      <p class="mono text-[13px] md:col-span-2" style="color:var(--muted);">nov 2025<br>1st place</p>
+      <div class="md:col-span-7">
+        <h3 class="font-display font-semibold text-2xl">UMKM investment and collaboration platform</h3>
+        <p class="mt-2 max-w-2xl" style="color:var(--soft);">As backend developer I designed the Laravel and PostgreSQL backend for six roles, with checks that keep each UMKM's financial data visible only to approved investors. I built the endpoints behind the real-time financial dashboard, revenue-based profit sharing, and monthly reports exporting to PDF and Excel. I wired OpenSign e-signatures, Pusher chat, and a Gemini chatbot for FAQs and recommendations.</p>
+      </div>
+      <p class="mono text-xs md:col-span-3" style="color:var(--muted);">laravel, postgresql, react, tailwind, pusher, opensign, gemini api<br><span style="color:var(--soft);">team kabel hdmi, himalkom ipb, agritechjam 2025</span></p>
+    </article>
+
+    <article class="py-6 rowline grid md:grid-cols-12 gap-4" style="border-bottom:1px solid var(--line);">
+      <p class="mono text-[13px] md:col-span-2" style="color:var(--muted);">hardware</p>
+      <div class="md:col-span-7">
+        <h3 class="font-display font-semibold text-2xl">Four RF433 sensor nodes, one master board</h3>
+        <p class="mt-2 max-w-2xl" style="color:var(--soft);">I wrote the C++ firmware for four LGT8F32P Nano-class nodes and an Arduino Mega master that collects multi-point sensor data over RF433. I drew the conditioning schematics and laid out the PCBs in KiCad so readings stay stable across nodes.</p>
+        <a class="mono text-[13px] inline-block mt-3 underline underline-offset-4 break-all" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/Arduino-Project-4-Node-and-Mega">github.com/rizkiramadhani-001/Arduino-Project-4-Node-and-Mega</a>
+      </div>
+      <p class="mono text-xs md:col-span-3" style="color:var(--muted);">c++, arduino mega, lgt8f32p, rf433, kicad</p>
+    </article>
+
+    <article class="py-6 rowline grid md:grid-cols-12 gap-4" style="border-bottom:1px solid var(--line);">
+      <p class="mono text-[13px] md:col-span-2" style="color:var(--muted);">web app</p>
+      <div class="md:col-span-7">
+        <h3 class="font-display font-semibold text-2xl">MyKeuangan, personal finance and reports</h3>
+        <p class="mt-2 max-w-2xl" style="color:var(--soft);">I built a reactive Laravel and Livewire app to log transactions, manage expense categories, and track monthly budgets, with filtered reports that export to Excel and PDF.</p>
+        <a class="mono text-[13px] inline-block mt-3 underline underline-offset-4" style="color:var(--accent);" href="https://github.com/rizkiramadhani-001/MyKeuangan">github.com/rizkiramadhani-001/MyKeuangan</a>
+      </div>
+      <p class="mono text-xs md:col-span-3" style="color:var(--muted);">laravel, php, livewire, tailwind, mysql</p>
+    </article>
+  </section>
+
+  <!-- SKILLS + ABOUT -->
+  <section id="skills" class="wrap py-10 scroll-mt-16">
+    <p class="mono text-[13px]" style="color:var(--accent);">03 / toolbox and background</p>
+    <h2 class="font-display font-bold mt-2" style="font-size:clamp(1.7rem,3.6vw,2.5rem);">Stack and school</h2>
+    <dl class="mt-6 mono text-[14px]">
+      <div class="py-3 rowline grid md:grid-cols-12 gap-2"><dt class="md:col-span-3" style="color:var(--muted);">languages</dt><dd class="md:col-span-9" style="color:var(--ink);">typescript, javascript, python, php, c, c++, sql</dd></div>
+      <div class="py-3 rowline grid md:grid-cols-12 gap-2"><dt class="md:col-span-3" style="color:var(--muted);">backend and ml</dt><dd class="md:col-span-9" style="color:var(--ink);">adonisjs, laravel, livewire, fastapi, node.js, prisma, zod, pydantic, scikit-learn, gemini api</dd></div>
+      <div class="py-3 rowline grid md:grid-cols-12 gap-2"><dt class="md:col-span-3" style="color:var(--muted);">iot and embedded</dt><dd class="md:col-span-9" style="color:var(--ink);">esp32, arduino mega, lgt8f32p, rf433 telemetry, c/c++ firmware, signal conditioning, kicad pcb</dd></div>
+      <div class="py-3 rowline grid md:grid-cols-12 gap-2" style="border-bottom:1px solid var(--line);"><dt class="md:col-span-3" style="color:var(--muted);">frontend, data, tools</dt><dd class="md:col-span-9" style="color:var(--ink);">react, ionic, vite, three.js, recharts, tailwind, postgresql, mysql, docker, git, pytest, linux</dd></div>
+    </dl>
+    <div class="mt-6 grid md:grid-cols-2 gap-5 text-[15px]" style="color:var(--soft);">
+      <p>IPB University, College of Vocational Studies, Bogor. Applied Bachelor (D4) in Computer Engineering Technology, Aug 2024 to expected 2028. GPA 3.77 of 4.00.</p>
+      <ul class="space-y-2 list-disc pl-5">
+        <li>1st place, AgriTechJam 2025, Himalkom IPB University, backend developer.</li>
+        <li>Participant, AI Innovation Challenge, COMPFEST 18, Jul to Sep 2026.</li>
+        <li>Participant, Garuda Hacks 7.0, international hackathon, Jul 2026.</li>
+      </ul>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section id="contact" class="wrap py-12 scroll-mt-16">
+    <div class="panel p-8 md:p-12 text-center">
+      <p class="mono text-[13px]" style="color:var(--accent);">04 / contact</p>
+      <h2 class="font-display font-bold mt-2" style="font-size:clamp(1.8rem,4vw,2.8rem);">Hire me for Jan to Jun 2027</h2>
+      <p class="mt-3 max-w-xl mx-auto" style="color:var(--soft);">A 6-month credit-bearing internship in backend, IoT, or embedded engineering. Email is fastest.</p>
+      <div class="mt-6 flex flex-wrap justify-center gap-3">
+        <a href="mailto:rizkiramadhanirizki@apps.ipb.ac.id?subject=Internship%20Jan%20to%20Jun%202027" class="font-semibold px-6 py-3 rounded-md" style="background:var(--accent);color:#06231E;">Email Rizki</a>
+        <a href="https://github.com/rizkiramadhani-001" class="font-semibold px-6 py-3 rounded-md border" style="border-color:var(--line);color:var(--ink);">GitHub</a>
+        <a href="https://linkedin.com/in/rizki-ramadhani" class="font-semibold px-6 py-3 rounded-md border" style="border-color:var(--line);color:var(--ink);">LinkedIn</a>
+      </div>
+      <p class="mono text-xs mt-8" style="color:var(--muted);">bogor, indonesia, +62 881-0112-05176, rizkiramadhanirizki@apps.ipb.ac.id</p>
+    </div>
+  </section>
+
+</main>
+</body>
+</html>
